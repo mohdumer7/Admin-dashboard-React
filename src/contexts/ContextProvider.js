@@ -25,6 +25,8 @@ export const ContextProvider = ({ children }) => {
         isClicked,
         handleClick,
         setIsClicked,
+        screenSize,
+        setScreenSize,
       }}
     >
       {children}
