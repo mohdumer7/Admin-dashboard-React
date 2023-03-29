@@ -4,38 +4,43 @@ import {
   SeriesCollectionDirective,
   SeriesDirective,
   Inject,
-  DateTime,
-  SplineAreaSeries,
   Legend,
+  Category,
+  Tooltip,
+  ColumnSeries,
+  DataLabel,
 } from "@syncfusion/ej2-react-charts";
 
-import { ChartsHeader } from "../../components";
 import {
-  areaCustomSeries,
-  areaPrimaryXAxis,
-  areaPrimaryYAxis,
+  barCustomSeries,
+  barPrimaryXAxis,
+  barPrimaryYAxis,
 } from "../../data/dummy";
+import { ChartsHeader } from "../../components";
 import { useStateContext } from "../../contexts/ContextProvider";
 
-const Area = () => {
+const Bar = () => {
   const { currentMode } = useStateContext();
 
   return (
     <div className="m-4 md:m-10 mt-24 p-10 bg-white dark:bg-secondary-dark-bg rounded-3xl">
-      <ChartsHeader category="Area" title="Inflation Rate in percentage" />
-      <div className="w-full">
+      <ChartsHeader category="Bar" title="Olympic Medal Counts - RIO" />
+      <div className=" w-full">
         <ChartComponent
           id="charts"
-          primaryXAxis={areaPrimaryXAxis}
-          primaryYAxis={areaPrimaryYAxis}
+          primaryXAxis={barPrimaryXAxis}
+          primaryYAxis={barPrimaryYAxis}
           chartArea={{ border: { width: 0 } }}
+          tooltip={{ enable: true }}
           background={currentMode === "Dark" ? "#33373E" : "#fff"}
           legendSettings={{ background: "white" }}
         >
-          <Inject services={[SplineAreaSeries, DateTime, Legend]} />
+          <Inject
+            services={[ColumnSeries, Legend, Tooltip, Category, DataLabel]}
+          />
           <SeriesCollectionDirective>
             {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-            {areaCustomSeries.map((item, index) => (
+            {barCustomSeries.map((item, index) => (
               <SeriesDirective key={index} {...item} />
             ))}
           </SeriesCollectionDirective>
@@ -45,4 +50,4 @@ const Area = () => {
   );
 };
 
-export default Area;
+export default Bar;
