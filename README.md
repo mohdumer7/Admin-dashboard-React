@@ -5,18 +5,26 @@
 ```
 
 Theming (Light,Dark Custom Color Pallette)
+
 Tables 
+
 Charts (Bar,Pie,Area,stacked...etc)
+
 Calendar (Teams calender based meeting etc)
+
 Kanban (Drag and Drop tasks)
+
 and More
 
 ```
 
+
+# EnJoy
+
 [Visit the Website](mohds-admin-dashboard.netlify.app/) 
 
 
-
+# -------------------------------------------------------------------------------------------------------------------------------
 
 # Getting Started with Create React App
 
