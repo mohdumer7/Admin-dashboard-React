@@ -1,3 +1,20 @@
+#This ia Full Fledge Admin Dashboard App Built with React using Syncfusion 
+
+##Features such as
+```
+Theming (Light,Dark Custom Color Pallette)
+Tables 
+Charts (Bar,Pie,Area,stacked...etc)
+Calendar (Teams calender based meeting etc)
+Kanban (Drag and Drop tasks)
+and More
+```
+
+[Visit the Website](mohds-admin-dashboard.netlify.app/) 
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
