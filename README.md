@@ -1,4 +1,4 @@
-# This ia Full Fledge Admin Dashboard App Built with React using Syncfusion 
+# This is a Full Fledge Admin Dashboard App Built with React using Syncfusion 
 
 ## Features such as
 
